@@ -1,7 +1,32 @@
 live-demo-java
 ==============
 
-Execute the following command for print the help usage:
+
+Requirements
+------------
+
+* Maven 3
+* Java 7
+
+
+How to compile
+--------------
+
+Download the sources in a directory ($SOURCES)
+
+    cd $SOURCES
+    mvn install
+
+
+Created artifacts
+-----------------
+
+* **demo-1.0-SNAPSHOT.jar**: demo jar
+* **demo-bundle.jar**: demo with all dependencies bundled
+
+
+Running the demo
+----------------
 
   $ java -jar demo-bundle.jar
 
