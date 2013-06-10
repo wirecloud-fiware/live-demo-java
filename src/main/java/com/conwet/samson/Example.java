@@ -37,7 +37,7 @@ public class Example {
 	
 	public Example() {
 		
-		querier = QueryFactory.newQuerier("130.206.80.254", 1026);
+		querier = QueryFactory.newQuerier("130.206.80.195", 1026);
 		id = "11bc309bb577b7e6008814dafa003e91";
 		type = "Observation";
 		factory = new ObjectFactory();
