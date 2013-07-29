@@ -128,6 +128,7 @@ public class Example {
 		EntityIdList entityList = factory.createEntityIdList();
 		entityList.getEntityId().add(querier.newEntityId(type, id, false));
 		cxtReg.setEntityIdList(entityList);
+		cxtReg.setContextRegistrationAttributeList(factory.createContextRegistrationAttributeList());
 		cxtReg.setProvidingApplication("http://wirecloud.conwet.fi.upm.es");
 		
 		Duration duration = DatatypeFactory.newInstance().newDuration("PT24H");
@@ -245,8 +246,7 @@ public class Example {
 		Example example = new Example();
 		example.registerContext();
 		String subID = example.subscribeContext();
-		// TODO Fix subscribeUpdate 
-//		example.subscribeUpdate(subID);
+		example.subscribeUpdate(subID);
 		example.updateContext();
 		example.queryContext();
 	}
